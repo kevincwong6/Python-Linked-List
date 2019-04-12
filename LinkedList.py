@@ -59,7 +59,7 @@ class LinkedList:
 # 1) delete head
 # 2) delete in the middle
 # 3) delete tail
-# 4) delete multipl occurrences
+# 4) delete multiple occurrences
 
 ll=LinkedList()
 
