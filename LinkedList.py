@@ -1,3 +1,4 @@
+
 from Node import Node
 
 class LinkedList:
@@ -42,14 +43,13 @@ class LinkedList:
                     self.head = node.next
                 else:
                     prevNode.next=node.next
+
+                if (deleteAll == False):
+                  return
             else:
                 itIsHead=False
 
-            if (deleteAll == False):
-                  break
-            else:
-                prevNode=node
-
+            prevNode=node
             node=node.next
 
         self.last=prevNode
@@ -70,11 +70,11 @@ ll.insert(Node(1))
 ll.insert(Node(3))
 ll.traverse()
 
-
 #ll.delete(2)
-#ll.delete(1, False)
+ll.delete(1, False)
 #ll.delete(1)
-ll.delete(3)
+#ll.delete(1, True)
+#ll.delete(3)
 
 ### output ###
 #1 1 2 1 3
